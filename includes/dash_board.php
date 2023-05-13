@@ -12,90 +12,6 @@
              <h2>DASHBOARD</h2>
          </div>
 
-         <!-- Widgets -->
-         <div class="row clearfix">
-             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-pink hover-expand-effect">
-                     <div class="icon">
-                         <i class="material-icons">playlist_add_check</i>
-                     </div>
-                     <div class="content">
-                         <div class="text">মোট সদস্য</div>
-
-                         <?php $query = "SELECT * FROM users";
-                            $run_query = mysqli_query($cn, $query);
-                            //Count total number of rows
-                            $count = mysqli_num_rows($run_query);
-
-                            ?>
-
-                         <div class="number count-to" data-from="0" data-to="<?php echo $count; ?>" data-speed="15"
-                             data-fresh-interval="20"></div>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-cyan hover-expand-effect">
-                     <div class="icon">
-                         <i class="material-icons">help</i>
-                     </div>
-                     <div class="content">
-                         <div class="text">প্রদর্শিত কন্টেন্ড</div>
-
-                         <?php $query = "SELECT * FROM contents WHERE approved='1'";
-                            $run_query = mysqli_query($cn, $query);
-                            //Count total number of rows
-                            $count1 = mysqli_num_rows($run_query);
-
-                            ?>
-                         <div class="number count-to" data-from="0" data-to="<?php echo $count1; ?>" data-speed="1000"
-                             data-fresh-interval="2"></div>
-                     </div>
-                 </div>
-             </div>
-
-             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-orange hover-expand-effect">
-                     <div class="icon">
-                         <i class="material-icons">person_add</i>
-                     </div>
-                     <div class="content">
-                         <div class="text">পেন্ডিং কন্টেন্ড</div>
-
-                         <?php $query = "SELECT * FROM contents WHERE approved='0'";
-                            $run_query = mysqli_query($cn, $query);
-                            //Count total number of rows
-                            $count2 = mysqli_num_rows($run_query);
-
-                            ?>
-                         <div class="number count-to" data-from="0" data-to="<?php echo $count2; ?>" data-speed="1000"
-                             data-fresh-interval="20"></div>
-                     </div>
-                 </div>
-             </div>
-
-
-             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                 <div class="info-box bg-light-green hover-expand-effect">
-                     <div class="icon">
-                         <i class="material-icons">forum</i>
-                     </div>
-                     <div class="content">
-                         <div class="text">মোট মন্তব্য</div>
-                         <?php $query = "SELECT * FROM comments";
-                         $run_query = mysqli_query($cn, $query);
-                         //Count total number of rows
-                         $count3 = mysqli_num_rows($run_query);
-
-                         ?>
-                         <div class="number count-to" data-from="0" data-to="<?php echo $count3; ?>" data-speed="1000"
-                             data-fresh-interval="20"></div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <!-- #END# Widgets -->
-         <!-- CPU Usage -->
 
          <!-- Hover Rows -->
          <div class="row clearfix">
@@ -124,8 +40,9 @@
 
                                  <?php
                                     $sl = 0;
+                                 $userId=$_COOKIE['userId'];
 
-                                    $view = "SELECT * FROM contents WHERE approved='0'";
+                                 $view = "SELECT * FROM contents WHERE approved='0' AND id='$userId'";
                                     $run = mysqli_query($cn, $view);
                                     while ($data = mysqli_fetch_array($run)) {
                                         $sl++;
@@ -137,14 +54,7 @@
                                  <tr>
                                      <th scope="row"><?php echo $sl; ?></th>
                                      <td><?php echo $data['categories'];?></td>
-                                     <td>
-                                         <?php
-                                         $text = $data['content'];
-                                         $stripped = strip_tags($text);
-                                         $truncated = substr($stripped, 0, 170);
-                                         echo $truncated . "...";
-                                         ?>
-                                     </td>
+                                     <td><?php echo $data['content']; ?></td>
                                      <td><button type="button" class="btn bg-teal waves-effect">
                                              <a href="approve-content.php?id=<?php echo $data['id']; ?>">
                                                  <i class="material-icons">add</i>

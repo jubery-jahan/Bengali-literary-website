@@ -52,6 +52,8 @@ if (isset($_REQUEST['dlt'])) {
 
 <section class="content">
     <div class="container-fluid">
+
+
         <div class="block-header">
             <h2>কন্টেন্ড আপডেট</h2>
         </div>

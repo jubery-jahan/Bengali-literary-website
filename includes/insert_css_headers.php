@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Admin Panel</title>
+    <title>সাহিত্য ও সাংস্কৃতিক প্রাঙ্গন</title>
     <!-- Favicon-->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 

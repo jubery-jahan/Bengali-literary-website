@@ -26,19 +26,20 @@ if (isset($_REQUEST['dlt'])) {
                     <div class="body table-responsive">
                         <table class="table table-hover">
                             <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>কেটেগরি</th>
-                                    <th>কন্টেন্ড</th>
-                                    <th>কার্যক্রম</th>
-                                </tr>
+                            <tr>
+                                <th>#</th>
+                                <th>কেটেগরি</th>
+                                <th>কন্টেন্ড</th>
+                                <th>কার্যক্রম</th>
+                            </tr>
                             </thead>
                             <tbody>
 
                             <?php
                             $sl = 0;
+                            $userId = $_COOKIE['userId'];
 
-                            $view = "SELECT * FROM contents WHERE approved='1'";
+                            $view = "SELECT * FROM contents WHERE user='$userId' AND approved='1'";
                             $run = mysqli_query($cn, $view);
                             while ($data = mysqli_fetch_array($run)) {
                                 $sl++;
@@ -48,7 +49,7 @@ if (isset($_REQUEST['dlt'])) {
 
                                 <tr>
                                     <th scope="row"><?php echo $sl; ?></th>
-                                    <td><?php echo $data['categories'];?></td>
+                                    <td><?php echo $data['categories']; ?></td>
                                     <td>
                                         <?php
                                         $text = $data['content'];
@@ -57,7 +58,8 @@ if (isset($_REQUEST['dlt'])) {
                                         echo $truncated . "...";
                                         ?>
                                     </td>
-                                    <td><button type="button" class="btn bg-teal waves-effect">
+                                    <td>
+                                        <button type="button" class="btn bg-teal waves-effect">
                                             <a href="edit-content.php?id=<?php echo $data['id']; ?>">
                                                 <i class="material-icons">border_color</i>
                                                 <span style="color:white">Edit</span>
@@ -65,7 +67,7 @@ if (isset($_REQUEST['dlt'])) {
                                         </button>
                                         <button type="button" class="btn bg-pink waves-effect">
                                             <a href="dlt-content.php?id=<?php echo $data['id']; ?>"
-                                                onclick="return confirm('Are You Sure?')">
+                                               onclick="return confirm('Are You Sure?')">
                                                 <i class="material-icons">delete</i>
                                                 <span style="color:white">Delete</span>
                                             </a>
@@ -75,7 +77,7 @@ if (isset($_REQUEST['dlt'])) {
                                 </tr>
 
 
-                                <?php } ?>
+                            <?php } ?>
                             </tbody>
                         </table>
                     </div>

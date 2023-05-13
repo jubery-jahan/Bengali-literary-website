@@ -3,17 +3,8 @@
     <div class="user-info">
 
         <div class="info-container">
-            <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+            <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</div>
             <div class="email">সাহিত্য ও সাংস্কৃতিক প্রাঙ্গন</div>
-            <div class="btn-group user-helper-dropdown">
-                <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
-                <ul class="dropdown-menu pull-right">
-                    <li><a href="../user/profile.php"><i class="material-icons">person</i>Profile</a></li>
-                    <li role="separator" class="divider"></li>
-
-                    <li><a href="logout.php"><i class="material-icons">input</i>Sign Out</a></li>
-                </ul>
-            </div>
         </div>
     </div>
     <!-- #User Info -->
@@ -21,6 +12,12 @@
     <div class="menu">
         <ul class="list">
             <li class="header">প্রধান মেনু</li>
+   <!--         <li class="active">
+                <a href="dashboard.php">
+                    <i class="material-icons">home</i>
+                    <span>পেন্ডিং কন্টেন্ড</span>
+                </a>
+            </li>-->
 
             <li>
                 <a href="../">
@@ -28,31 +25,29 @@
                     <span> হোমপেজ</span>
                 </a>
             </li>
-            <li class="active">
-                <a href="dashboard.php">
-                    <i class="material-icons">home</i>
-                    <span>পেন্ডিং কন্টেন্ড</span>
+            <li>
+                <a href="profile.php">
+                    <i class="material-icons">person</i>
+                    <span> আমার প্রোফাইল</span>
                 </a>
             </li>
-
-
-
+            <li>
+                <a href="add_content.php">
+                    <i class="material-icons">add</i>
+                    <span>কন্টেন্ড যুক্ত করুন</span>
+                </a>
+            </li>
             <li>
                 <a href="contents.php">
                     <i class="material-icons">list</i>
-                    <span>কন্টেন্ড তালিকা</span>
+                    <span> আমার প্রদর্শিত কন্টেন্ড</span>
                 </a>
             </li>
 
             <li>
-                <a href="users.php">
-                    <i class="material-icons">groups</i>
-                    <span>সদস্যবৃন্দ</span>
-                </a>
-            </li><li>
-                <a href="logout.php">
+                <a href="contents.php">
                     <i class="material-icons">logout</i>
-                    <span>লগআউট</span>
+                    <span> লগ আউট</span>
                 </a>
             </li>
 

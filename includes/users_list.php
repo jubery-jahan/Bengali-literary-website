@@ -52,7 +52,7 @@ if (isset($_REQUEST['dlt'])) {
 
                                 <tr>
                                     <th scope="row"><?php echo $sl; ?></th>
-                                    <td><img src="../user/uploads/dps/<?php echo $data['photo'];?>" width="50px" width="60px"/></td>
+                                    <td><img src="<?php echo $data['photo'];?>" width="50px" width="60px"/></td>
                                     <td><?php echo $data['name'];?></td>
                                     <td><?php echo $data['gender']; ?></td>
                                     <td><?php echo $data['email']; ?></td>
