@@ -1,5 +1,5 @@
 
-<?php require_once('admin_chk.php'); ?>
+<?php require_once('chk.php'); ?>
 <script src="assets/jq.js"></script>
 
 
