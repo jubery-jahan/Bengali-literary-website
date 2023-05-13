@@ -1,6 +1,6 @@
-<?php require_once('core/dbcon.php');
-if(isset($_COOKIE['userId']) && $_COOKIE['userId'] != null){
+<?php require_once('../core/dbcon.php');
+if(isset($_COOKIE['admin_logged']) && $_COOKIE['admin_logged'] != null){
 
-    header("location:user/dashboard.php");
- }
+    header("location:dashboard.php");
+}
 ?>
