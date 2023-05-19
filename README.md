@@ -12,6 +12,13 @@ Database
 
 ![mysql-ar21](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/6865fe20-d999-44ba-855f-d1b1831d3f76)
 
+Front End
+![HTML5_logo_and_wordmark svg](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/40d1b669-13b3-4b76-8f09-a99d38244ff1)
+![1452px-CSS3_logo_and_wordmark svg](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/ab04cfb5-2108-4822-a5db-c1dd9ebe7e80)
+![bootstrap-logo-vector](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/2bda34bc-53c1-436c-b8f0-915634832917)
+
+
+
 
 
 
