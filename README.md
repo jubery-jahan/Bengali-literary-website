@@ -16,11 +16,14 @@ Database
 
 Front End
 
-![HTML5_logo_and_wordmark svg](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/40d1b669-13b3-4b76-8f09-a99d38244ff1)
+![2da4c000-66ce-11eb-849e-55ace5faf74c](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/35c51561-8e0b-44e6-af2a-d9185ac4c93e)
 
-![1452px-CSS3_logo_and_wordmark svg](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/ab04cfb5-2108-4822-a5db-c1dd9ebe7e80)
 
-![bootstrap-logo-vector](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/2bda34bc-53c1-436c-b8f0-915634832917)
+![68747470733a2f2f63646e2e706978616261792e636f6d2f70686f746f2f323031372f30382f30352f31312f31362f6c6f676f2d323538323734375f313238302e706e67](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/45c6c469-c72e-4742-b6bf-94dd0140c808)
+
+
+![bootstrap-logo-vector](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/f5395d94-d4e0-4c0b-90da-c6b246df36e0)
+
 
 
 Tools
