@@ -6,7 +6,8 @@ This website will promote and preserve Bengali literature. It can serve as a pla
 # Build With
 Programming Language
 
-![php](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/c3139d00-a6b5-4fcc-ab40-0090a6c55dd9)
+![php](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/bfbb0a58-a894-4692-b74d-f8bf5316af67)
+
 
 Database
 
