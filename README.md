@@ -11,7 +11,8 @@ Programming Language
 
 Database
 
-![mysql-ar21](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/6865fe20-d999-44ba-855f-d1b1831d3f76)
+![mysql-ar21](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/30164667-00ce-44d1-b769-129ed8206892)
+
 
 Front End
 
