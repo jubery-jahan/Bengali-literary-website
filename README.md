@@ -10,7 +10,9 @@ Programming Language
 
 Database
 
-![mysql-ar21](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/29e20ac6-3695-4f3e-82e6-dabbf7a3e23a)
+![mysql-ar21](https://github.com/jubery-jahan/Bengali-literary-website/assets/76787670/6865fe20-d999-44ba-855f-d1b1831d3f76)
+
+
 
 
 
